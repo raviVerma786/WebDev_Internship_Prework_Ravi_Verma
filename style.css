@@ -1,0 +1,315 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background: #000;
+    color: white;
+}
+h1{
+    font-size: 3rem;
+}
+ul{
+    list-style: none;
+}
+
+li{
+    list-style: none;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+#main::before{
+    content: "";
+    position: absolute;
+    background: url("./home.jpg") no-repeat center center/cover;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+
+}
+
+#mainText{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3.8rem;
+    padding: 12px;
+    text-shadow: 4px 4px black;
+}
+
+.second{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+
+}
+
+.third{
+    position: relative;
+    text-align: center;
+    background-color: #242323;
+}
+.third img{
+    height:60vh;
+    width: 70%;
+}
+
+#girlsImage{
+    transform: translate(0,-2rem);
+    box-shadow: 2px 2px 15px rgb(22, 22, 22);
+}
+.cards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 30%;
+    margin-top: 2rem;
+}
+
+.cardImage img{
+    width: 80%;
+    height: 100%;
+    box-shadow: 2px 2px 15px rgb(22, 22, 22);
+}
+.companies{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+    color: #000;
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 2rem; */
+}
+
+#companyText{
+    width: 40%;
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+.companyLogos{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.companyLogos img{
+    height: 4rem;
+    width: 30%;
+}
+
+/* third class */
+.thirdContainer {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .thirdcard {
+    width: 305px;
+    margin: 25px;
+    padding: 40px 30px;
+    position: relative;
+    transition: all 0.25s ease-in-out;
+  }
+  
+  .thirdcard .card__icon {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+  
+  .thirdcard .card__icon img {
+    height: 10%;
+  }
+  
+  .thirdcard h6 {
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  
+  .thirdcard ul li {
+    list-style: none;
+    padding: 3px 0;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 300;
+    opacity: 0.7;
+  }
+  
+  .thirdcard.selected::before {
+    content: "";
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    right: -25px;
+    bottom: -30px;
+    background: url(https://i.imgur.com/WunqBPz.png);
+    background-position: right;
+    background-size: 10px;
+    z-index: -1;
+  }
+  
+  .thirdcard.selected {
+    background-color: #161619;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+
+  /* footer */
+  .footer ul{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 1rem;
+    padding: 1rem;
+  }
+ 
+  .btn{
+    margin-top: 1rem;
+    left: 0;
+  }
+
+  .contact{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 2rem;
+  }
+
+  .social{
+    font-size: 1.5rem;
+    font-weight: 40;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  #socialIcons{
+    display: flex;
+    color: white;
+  }
+
+  #socialIcons li img{
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+  }
+
+  @media  screen and (max-width: 750px) {
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+  }
+
+  @media screen and (max-width:740px) {
+    .second{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .card{
+        width: 85%;
+    }
+    .cardImage img{
+        box-shadow: 2px 2px 15px rgb(22, 22, 22);
+    }
+    .companies{
+        flex-direction: column;
+        justify-content: center
+    }
+    .companyLogos{
+        width: 90%;
+    }
+    #companyText{
+        width: 80%;
+    }
+
+    #companyText h1{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    #girlsImage{
+        width: 90%;
+        height: 35vh;
+        transform: translate(0);
+    }
+
+    /* .contact{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .social{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .contactText{
+        text-align: center;
+    }
+    .btn{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .footer ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+    h6{
+        margin-top: 1rem;
+    }
+    #digital{
+        margin-bottom: 1.5rem;
+    }
+
+    .social h4{
+        text-align: center;
+    }
+  }
